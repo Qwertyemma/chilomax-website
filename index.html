@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/bcc7d58f8f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Chilomax Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav id="nav-bar">
+      <div class="container">
+        <div class="logo"><a href="#home">Chilomax</a></div>
+        <div class="nav1">
+          <button id="click" class="menu-btn-button" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button type="button" class="btn">Sign In</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="homepage" id="home">
+    <div class="home-container">
+      <div class="home-text">
+        <h1 data-aos="fade-right"data-aos-duration="1400">Welcome to my Portfolio!</h1>
+        <h3 data-aos="zoom-in-left" data-aos-duration="1400"data-aos-delay="200">I'm a <span class="typedText"></span></h3>
+        <h5 data-aos="fade-right"data-aos-duration="1400" data-aos-delay="300">Dedicated to building innovative solutions in software development.</h5>
+        <p>Explore my projects for more designs</p>
+        <div class="main-home">
+          <a href="#explore-more-section">
+          <button id="explore-more-btn" class="btn-primary"> Explore Now</button></a>
+        </div>
+      </div>
+      <div class="home-image">
+        <img src="images/computer.png" width="300" alt="Computer Image"/>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about reveal">
+    <div class="container">
+     <h2>About Me</h2>
+     <img src="profile-picture.jpg" alt="Profile Picture">
+     <p data-aos="zoom-in-left" data-aos-duration="1400"data-aos-delay="200"> Hi,I am Obiasogu Emmanuel , a computer engineering undergraduate with a strong interest in applying technology to solve real-world problems. My fascination lies in artificial intelligence and robotics,and I'm excited to explore on their applications.
+</p>
+      <p data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="200">Throughout my academic journey, I've developed proficiency in various programming languages,including Python,JavaScript,C++ and java. I'm also well-versed in circuit design, microcontrollers and comfortable using development tools like Visual Studio Code.</p>
+     <p data-aos="zoom-in-right" data-aos-duration="1400"data-aos-delay="200">Currently,I'm working on an interactive voice assistant project that integrates my programming skills with AI concepts.Additionally,I have designed and developed multiple portfolio websites for clients , enhancing my web development skills and understanding of user interface design.Beyond academics, I am drawn to machine learning and its potential to revolutionize AI innovation. My interest in science fiction inspires my creativity as I envision the future possibilities of technology.</p>
+    <h3 data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="300">Skills:</h3>
+    <ul data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="350">
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>UI/UX Design</li>
+    </ul>
+    <h3 data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="400">Experience:</h3>
+    <ul data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="400">
+      <li>Freelance Web Designer (2020-Present)</li>
+      <li>Junior Web Developer at ABC Company (2018-2020)</li>
+    </ul>
+    </div>
+  </section>
+  <section id="explore-more-section" class="explore-more-section reveal hidden">
+    <h2 class="section-title">Explore More</h2>
+    <p class="section-description">this section is hidden until button is clicked.</p>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/400" alt="Image 1">
+                <p>Slide 1 text to move to the next line or break if it is too long</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/400" alt="Image 2">
+                <p>Slide 2</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/400" alt="Image 3">
+                <p>Slide 3</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/400" alt="Image 4">
+                <p>Slide 4</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/400" alt="Image 5">
+                <p>Slide 5</p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section id="service" class="service reveal">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services-container">
+        <div class="service-box reveal">
+          <i class=" icon fas fa-code"></i></p>
+          <h3>Web Development</h3>
+          <p>Creating responsive and dynamic websites.</p>
+        </div>
+        <div class="service-box reveal">
+          <i class="icon fas fa-mobile-alt"></i></p>
+          <h3>App Development</h3>
+          <p>Developing cross-platform mobile applications.</p>
+        </div>
+        <div class="service-box reveal">
+          <i class="icon fas fa-lightbulb"></i></p>
+          <h3>Consulting</h3>
+          <p>Providing expert advice on technology solutions.</p>
+        </div>
+       <div class="service-box reveal">
+         <i class=" icon fas fa-paint-brush"></i>
+        <h3>Graphic Design</h3>
+        <p>Designing visually appealing graphics that represent your brand.</p>
+      </div>
+      <div class="service-box reveal">
+        <i class=" icon fas fa-chart-line"></i>
+        <h3>SEO Optimization</h3>
+        <p>Improving your website's visibility on search engines to attract more traffic.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact reveal">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="enter your name" required>
+        <input type="tel" name="phone" placeholder="Phone number" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+     <div class="floating-btn">
+      <div class="social-icons" id="social-icons">
+        <a href="https://wa.me/2348116298061" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/YOUR_PROFILE" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/YOUR_PROFILE" target="_blank" class="social-button twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>©2024 Chilomax. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#explore-more-section">Terms of Service</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
