@@ -1,177 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/bcc7d58f8f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Chilomax Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engineer Portfolio | AI & API Development</title>
+    <meta name="description"
+        content="Portfolio of a Machine Learning Engineer specializing in AI, API Development, and Microservices.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav id="nav-bar">
-      <div class="container">
-        <div class="logo"><a href="#home">Chilomax</a></div>
-        <div class="nav1">
-          <button id="click" class="menu-btn-button" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button type="button" class="btn">Sign In</button></li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">OEC<span class="highlight">.Portfolio</span></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link btn-contact">Contact Me</a></li>
+            </ul>
         </div>
-      </div>
     </nav>
-  </header>
-  <section class="homepage" id="home">
-    <div class="home-container">
-      <div class="home-text">
-        <h1 data-aos="fade-right"data-aos-duration="1400">Welcome to my Portfolio!</h1>
-        <h3 data-aos="zoom-in-left" data-aos-duration="1400"data-aos-delay="200">I'm a <span class="typedText"></span></h3>
-        <h5 data-aos="fade-right"data-aos-duration="1400" data-aos-delay="300">Dedicated to building innovative solutions in software development.</h5>
-        <p>Explore my projects for more designs</p>
-        <div class="main-home">
-          <a href="#explore-more-section">
-          <button id="explore-more-btn" class="btn-primary"> Explore Now</button></a>
-        </div>
-      </div>
-      <div class="home-image">
-        <img src="https://qwertyemma.github.io/chilomax-website/computer.png" alt="Description of the image">
-      </div>
-    </div>
-  </section>
-  <section id="about" class="about reveal">
-    <div class="container">
-     <h2>About Me</h2>
-     <img src="profile-picture.jpg" alt="Profile Picture">
-     <p data-aos="zoom-in-left" data-aos-duration="1400"data-aos-delay="200"> Hi,I am Obiasogu Emmanuel , a computer engineering undergraduate with a strong interest in applying technology to solve real-world problems. My fascination lies in artificial intelligence and robotics,and I'm excited to explore on their applications.
-</p>
-      <p data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="200">Throughout my academic journey, I've developed proficiency in various programming languages,including Python,JavaScript,C++ and java. I'm also well-versed in circuit design, microcontrollers and comfortable using development tools like Visual Studio Code.</p>
-     <p data-aos="zoom-in-right" data-aos-duration="1400"data-aos-delay="200">Currently,I'm working on an interactive voice assistant project that integrates my programming skills with AI concepts.Additionally,I have designed and developed multiple portfolio websites for clients , enhancing my web development skills and understanding of user interface design.Beyond academics, I am drawn to machine learning and its potential to revolutionize AI innovation. My interest in science fiction inspires my creativity as I envision the future possibilities of technology.</p>
-    <h3 data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="300">Skills:</h3>
-    <ul data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="350">
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>UI/UX Design</li>
-    </ul>
-    <h3 data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="400">Experience:</h3>
-    <ul data-aos="zoom-in" data-aos-duration="1400"data-aos-delay="400">
-      <li>Freelance Web Designer (2020-Present)</li>
-      <li>Junior Web Developer at ABC Company (2018-2020)</li>
-    </ul>
-    </div>
-  </section>
-  <section id="explore-more-section" class="explore-more-section reveal hidden">
-    <h2 class="section-title">Explore More</h2>
-    <p class="section-description">this section is hidden until button is clicked.</p>
-    <div class="portfolio-container">
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-        <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/400" alt="Image 1">
-                <p>Slide 1 text to move to the next line or break if it is too long</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="tagline">Welcome to the future of AI</span>
+                <h1>Hi, I'm <span class="gradient-text">Obiasogu Emmanuel</span></h1>
+                <h2 class="subtitle">I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-description">
+                    Building intelligent systems, scalable APIs, and robust infrastructure for the next generation of AI
+                    applications. Passionate about transforming complex problems into elegant, production-ready
+                    solutions.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+                <div class="tech-stack-icons">
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fas fa-brain" title="Machine Learning"></i>
+                    <i class="fab fa-docker" title="Docker"></i>
+                    <i class="fas fa-server" title="Microservices"></i>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/400" alt="Image 2">
-                <p>Slide 2</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/400" alt="Image 3">
-                <p>Slide 3</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/400" alt="Image 4">
-                <p>Slide 4</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/400" alt="Image 5">
-                <p>Slide 5</p>
+            <div class="hero-image-container">
+                <!-- Using a placeholder for now, would replace with user's photo or 3D element -->
+                <div class="glow-circle"></div>
+                <div class="ai-brain-visual">
+                    <i class="fas fa-network-wired"></i>
+                </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-  </section>
-  <section id="service" class="service reveal">
-    <div class="container">
-      <h2>Services</h2>
-      <div class="services-container">
-        <div class="service-box reveal">
-          <i class=" icon fas fa-code"></i></p>
-          <h3>Web Development</h3>
-          <p>Creating responsive and dynamic websites.</p>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>The Intersection of AI & Engineering</h3>
+                    <p>
+                        Hi! I'm <strong>Obiasogu Emmanuel Chukwulotam</strong>, a passionate Machine Learning Engineer
+                        dedicated to bridging the gap between theoretical
+                        models and production-grade applications. With a deep understanding of <strong>Artificial
+                            Intelligence</strong> algorithms and a strong
+                        foundation in <strong>Backend Engineering</strong>, I create systems that are not only smart but
+                        also scalable and reliable.
+                    </p>
+                    <p>
+                        My journey involves mastering <strong>API Development</strong> for microservices, ensuring that
+                        complex ML models can be easily consumed by other applications. I thrive on challenges that push
+                        the boundaries
+                        of what's possible with AI, and I'm constantly learning and evolving with the rapidly changing
+                        tech landscape.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                            <span class="stat-label">Dedication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="service-box reveal">
-          <i class="icon fas fa-mobile-alt"></i></p>
-          <h3>App Development</h3>
-          <p>Developing cross-platform mobile applications.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical <span class="highlight">Arsenal</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- ML & AI -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-Learn</span>
+                        <span>NLP</span>
+                        <span>Computer Vision</span>
+                        <span>Neural Networks</span>
+                    </div>
+                </div>
+                <!-- Backend & APIs -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Backend & APIs</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>RESTful APIs</span>
+                        <span>GraphQL</span>
+                        <span>Microservices</span>
+                    </div>
+                </div>
+                <!-- Infrastructure -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Infrastructure & DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                        <span>Linux</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="service-box reveal">
-          <i class="icon fas fa-lightbulb"></i></p>
-          <h3>Consulting</h3>
-          <p>Providing expert advice on technology solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder gradient-1"><i class="fas fa-brain"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Predictive Model</h3>
+                        <p>A sophisticated machine learning model for predicting market trends with high accuracy.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder gradient-2"><i class="fas fa-cloud-api"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Microservices API Gateway</h3>
+                        <p>Scalable API gateway architecture handling thousands of requests for distributed services.
+                        </p>
+                        <div class="project-tags">
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="img-placeholder gradient-3"><i class="fas fa-image"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Image Recognition App</h3>
+                        <p>Deep learning application capable of classifying objects in real-time video streams.</p>
+                        <div class="project-tags">
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                            <span>React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       <div class="service-box reveal">
-         <i class=" icon fas fa-paint-brush"></i>
-        <h3>Graphic Design</h3>
-        <p>Designing visually appealing graphics that represent your brand.</p>
-      </div>
-      <div class="service-box reveal">
-        <i class=" icon fas fa-chart-line"></i>
-        <h3>SEO Optimization</h3>
-        <p>Improving your website's visibility on search engines to attract more traffic.</p>
-      </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact reveal">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="enter your name" required>
-        <input type="tel" name="phone" placeholder="Phone number" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Send message</button>
-      </form>
-     <div class="floating-btn">
-      <div class="social-icons" id="social-icons">
-        <a href="https://wa.me/2348116298061" target="_blank" ><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com/YOUR_PROFILE" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/YOUR_PROFILE" target="_blank" class="social-button twitter"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <p>©2024 Chilomax. All rights reserved.</p>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#explore-more-section">Terms of Service</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </footer>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="script.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Build Something <br><span class="highlight">Incredible</span></h2>
+                    <p>Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back
+                        to you!</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>emmanuelobiasogu32@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nigeria / Remote Worldwide</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Obiasogu Emmanuel Chukwulotam</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Qwertyemma" target="_blank" rel="noopener noreferrer"
+                            title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/emmanuel-obiasogu" target="_blank"
+                            rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/chilomax1" target="_blank" rel="noopener noreferrer"
+                            title="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.kaggle.com/chilomax" target="_blank" rel="noopener noreferrer"
+                            title="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Obiasogu Emmanuel Chukwulotam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js for background effect -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
