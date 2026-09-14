@@ -3,7 +3,7 @@
 [![X](https://img.shields.io/badge/X-@ChilotaDev-000000?logo=x&logoColor=white)](https://x.com/ChilotaDev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/emmanuel-obiasogu)
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:emmanuelobiasogu32@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green)](https://qwertyemma.github.io/chilomax-website/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green)](https://qwertyemma.github.io/portfolio/)
 
 ### Machine Learning Engineer · AI Systems · Backend Engineering
 
@@ -107,5 +107,5 @@ I'm interested in connecting with **ML researchers, engineers, open-source contr
 
 - **X:** [@ChilotaDev](https://x.com/ChilotaDev)
 - **LinkedIn:** [Emmanuel Obiasogu](https://www.linkedin.com/in/emmanuel-obiasogu)
-- **Portfolio:** [qwertyemma.github.io/chilomax-website](https://qwertyemma.github.io/chilomax-website/)
+- **Portfolio:** [qwertyemma.github.io/portfolio](https://qwertyemma.github.io/portfolio/)
 - **Email:** emmanuelobiasogu32@gmail.com
